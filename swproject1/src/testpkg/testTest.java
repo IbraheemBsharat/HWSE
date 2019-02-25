@@ -3,24 +3,25 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
+
 import swproject1.book;
 import swproject1.shoppingcart;
 
-class testTest {
+public class testTest {
 	 shoppingcart s;
 	@Before
-	 void setUpBeforeClass() throws Exception {
+	public void setUpBeforeClass() throws Exception {
 		 s= new shoppingcart();
 		
 	}
 
 	@Test
-	void test1() {
+	public void test1() {
 		
 		assertTrue(s.prodcount==0);
 	}
   @Test
-   void test2() {
+  public void test2() {
 	   book bok =new book();
 	   bok.name="Java Book";
 	   bok.price=127;
@@ -30,7 +31,7 @@ class testTest {
 	   assertTrue(s.total_value==127);
    }
    @Test
-   void test3() {
+   public void test3() {
 	   book bok =new book();
 	   bok.name="Java Book";
 	   bok.price=127;
