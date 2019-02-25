@@ -1,13 +1,14 @@
 package testpkg;
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Before;
+import org.junit.Test;
 import swproject1.book;
 import swproject1.shoppingcart;
 
 class testTest {
 	 shoppingcart s;
-	@BeforeEach
+	@Before
 	 void setUpBeforeClass() throws Exception {
 		 s= new shoppingcart();
 		
